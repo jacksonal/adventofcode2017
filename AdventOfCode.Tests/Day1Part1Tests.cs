@@ -9,14 +9,14 @@ using NUnit.Framework;
 namespace AdventOfCode.Tests
 {
     [TestFixture]
-    public class Day1Tests
+    public class Day1Part1Tests
     {
-        private ReverseCaptcha _systemUnderTest;
+        private ReverseCaptchaNextDuplicate _systemUnderTest;
 
         [SetUp]
         public void BeforeEach()
         {
-            _systemUnderTest = new ReverseCaptcha();
+            _systemUnderTest = new ReverseCaptchaNextDuplicate();
         }
 
         [Test]

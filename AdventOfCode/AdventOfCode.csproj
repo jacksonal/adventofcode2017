@@ -41,6 +41,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Day1\ReverseCaptcha.cs" />
+    <Compile Include="Day1\ReverseCaptchaHalfwayAroundDuplicate.cs" />
+    <Compile Include="Day1\ReverseCaptchaNextDuplicate.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
