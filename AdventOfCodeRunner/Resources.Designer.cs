@@ -68,5 +68,21 @@ namespace AdventOfCodeRunner {
                 return ResourceManager.GetString("Day1Input", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 62	1649	1731	76	51	1295	349	719	52	1984	2015	2171	981	1809	181	1715
+        ///161	99	1506	1658	84	78	533	242	1685	86	107	1548	670	960	1641	610
+        ///95	2420	2404	2293	542	2107	2198	121	109	209	2759	1373	1446	905	1837	111
+        ///552	186	751	527	696	164	114	530	558	307	252	200	481	142	205	479
+        ///581	1344	994	1413	120	112	656	1315	1249	193	1411	1280	110	103	74	1007
+        ///2536	5252	159	179	4701	1264	1400	2313	4237	161	142	4336	1061	3987	2268	4669
+        ///3270	1026	381	185	293	3520	1705	1610	3302	628	3420	524	3172	244	295	39
+        ///4142	1835	4137	3821 [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Day2Input {
+            get {
+                return ResourceManager.GetString("Day2Input", resourceCulture);
+            }
+        }
     }
 }
