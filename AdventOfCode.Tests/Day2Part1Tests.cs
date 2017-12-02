@@ -8,19 +8,19 @@ namespace AdventOfCode.Tests
     [TestFixture]
     public class Day2Part1Tests
     {
-        private CheckSumSolver _systemUnderTest;
+        private BiggestDiffCheckSumSolver _systemUnderTest;
 
         [SetUp]
         public void BeforeEach()
         {
-            _systemUnderTest = new CheckSumSolver();
+            _systemUnderTest = new BiggestDiffCheckSumSolver();
         }
 
         [Test]
         public void GetLargestDifference_FindsLargestDiff()
         {
             var input = new []{12, 45, 32, 102, 76, 33};
-            var result = _systemUnderTest.GetLargestDifference(input);
+            var result = _systemUnderTest.GetRowCheckSum(input);
             Assert.AreEqual(90, result);
         }
 

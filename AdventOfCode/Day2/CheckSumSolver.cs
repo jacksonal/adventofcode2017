@@ -5,14 +5,9 @@ using System.Linq;
 
 namespace AdventOfCode.Day2
 {
-    public class CheckSumSolver
+    public abstract class CheckSumSolver
     {
-        public int GetLargestDifference(IEnumerable<int> input)
-        {
-            var sorted = input.ToList();
-            sorted.Sort();
-            return sorted.Last() - sorted.First();
-        }
+        public abstract int GetRowCheckSum(IEnumerable<int> input);
 
         public IEnumerable<int> ParseRow(string input)
         {
@@ -33,7 +28,7 @@ namespace AdventOfCode.Day2
                 while (line != null)
                 {
                     var row = ParseRow(line);
-                    ret += GetLargestDifference(row);
+                    ret += GetRowCheckSum(row);
                     line = sr.ReadLine();
                 }
             }
