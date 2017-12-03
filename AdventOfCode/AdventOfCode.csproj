@@ -46,7 +46,11 @@
     <Compile Include="Day2\BiggestDiffCheckSumSolver.cs" />
     <Compile Include="Day2\CheckSumSolver.cs" />
     <Compile Include="Day2\EvenlyDivisibleCheckSumSolver.cs" />
+    <Compile Include="Day3\AccumulatingAdjacentSpiralSolver.cs" />
+    <Compile Include="Day3\EdgeLocation.cs" />
+    <Compile Include="Day3\GridLocation.cs" />
     <Compile Include="Day3\ManhattenDistanceSpiralSolver.cs" />
+    <Compile Include="Day3\SpiralSolver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
