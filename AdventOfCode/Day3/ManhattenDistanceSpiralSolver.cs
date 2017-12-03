@@ -12,7 +12,7 @@ namespace AdventOfCode.Day3
             }
             var loc = GetLocation(startingPoint);
             //get distance from origin
-            return Math.Abs(loc.X) + Math.Abs(loc.Y);
+            return GetDistance(loc, new GridLocation(0,0));
         }
     }
 }

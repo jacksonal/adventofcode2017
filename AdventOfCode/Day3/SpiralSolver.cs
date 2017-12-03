@@ -19,36 +19,40 @@ namespace AdventOfCode.Day3
         /// <returns></returns>
         public GridLocation GetLocation(int squareNum)
         {
-            //Need to translate the grid so that the center is the origin.
-            var dimensions = GetGridDimensions(squareNum) - 1;
-            //start at the bottom right and determine which edge we're on.
-            var edgeLoc = GetEdgeLocation(squareNum);
-            var ret = new GridLocation(dimensions, dimensions);
-            switch (edgeLoc.Edge)
+            var ret = new GridLocation(0,0);
+            if (squareNum != 1)
             {
-                case Edge.Bottom:
-                    ret.Y = dimensions;
-                    ret.X = dimensions - edgeLoc.Distance;
-                    break;
-                case Edge.Left:
-                    ret.Y = dimensions - edgeLoc.Distance;
-                    ret.X = 0;
-                    break;
-                case Edge.Top:
-                    ret.X = dimensions - edgeLoc.Distance;
-                    ret.Y = 0;
-                    break;
-                case Edge.Right:
-                    ret.X = dimensions;
-                    ret.Y = dimensions - edgeLoc.Distance;
-                    break;
-                default:
-                    throw new ArgumentOutOfRangeException();
+                //Need to translate the grid so that the center is the origin.
+                var maxCoord = GetGridDimensions(squareNum) - 1;
+                //start at the bottom right and determine which edge we're on.
+                var edgeLoc = GetEdgeLocation(squareNum);
+                ret = new GridLocation(maxCoord, maxCoord);
+                switch (edgeLoc.Edge)
+                {
+                    case Edge.Bottom:
+                        ret.Y = 0;
+                        ret.X = maxCoord - edgeLoc.Distance;
+                        break;
+                    case Edge.Left:
+                        ret.Y = edgeLoc.Distance;
+                        ret.X = 0;
+                        break;
+                    case Edge.Top:
+                        ret.X = edgeLoc.Distance;
+                        ret.Y = maxCoord;
+                        break;
+                    case Edge.Right:
+                        ret.X = maxCoord;
+                        ret.Y = maxCoord - edgeLoc.Distance;
+                        break;
+                    default:
+                        throw new ArgumentOutOfRangeException();
+                }
+                
+                var translation = (int) Math.Floor(maxCoord / 2.0);
+                ret.X -= translation;
+                ret.Y -= translation;
             }
-            
-            var translation = (int)Math.Floor(dimensions / 2.0);
-            ret.X -= translation;
-            ret.Y -= translation;
             return ret;
         }
 
@@ -67,6 +71,11 @@ namespace AdventOfCode.Day3
             }
             
             return ret;
+        }
+
+        protected int GetDistance(GridLocation locA, GridLocation locB)
+        {
+            return Math.Abs(locA.X - locB.X) + Math.Abs(locA.Y - locB.Y);
         }
     }
 }

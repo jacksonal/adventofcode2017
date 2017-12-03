@@ -51,7 +51,7 @@ namespace AdventOfCode.Tests
         {
             var result = _systemUnderTest.GetLocation(9);
             Assert.AreEqual(1, result.X);
-            Assert.AreEqual(1, result.Y);
+            Assert.AreEqual(-1, result.Y);
         }
 
         [Test]
@@ -59,7 +59,15 @@ namespace AdventOfCode.Tests
         {
             var result = _systemUnderTest.GetLocation(7);
             Assert.AreEqual(-1, result.X);
-            Assert.AreEqual(1, result.Y);
+            Assert.AreEqual(-1, result.Y);
+        }
+
+        [Test]
+        public void GetLocation_Given1_ReturnsOrigin()
+        {
+            var result = _systemUnderTest.GetLocation(1);
+            Assert.AreEqual(0, result.X);
+            Assert.AreEqual(0, result.Y);
         }
 
         [Test]
@@ -67,7 +75,18 @@ namespace AdventOfCode.Tests
         {
             var result = _systemUnderTest.GetEdgeLocation(9);
             Assert.AreEqual(Edge.Bottom, result.Edge);
+            Assert.AreEqual(0, result.Distance);
         }
+
+        [TestCase(9)]
+        [TestCase(7)]
+        [TestCase(5)]
+        [TestCase(3)]
+        public void GetEdge_GivenCorner_Returns0Distance(int squareNum)
+        {
+            Assert.AreEqual(0, _systemUnderTest.GetEdgeLocation(squareNum).Distance);
+        }
+
         [TestCase(8,Edge.Bottom, 1)]
         [TestCase(7, Edge.Left, 0)]
         [TestCase(6, Edge.Left, 1)]
