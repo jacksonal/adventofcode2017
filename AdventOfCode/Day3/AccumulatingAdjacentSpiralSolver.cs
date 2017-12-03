@@ -31,12 +31,18 @@ namespace AdventOfCode.Day3
             return RecursiveSolve(1,input);
         }
 
+        /// <summary>
+        /// recursively find the first value larger than the input given.
+        /// </summary>
+        /// <param name="squareNum"></param>
+        /// <param name="input"></param>
+        /// <returns></returns>
         private int RecursiveSolve(int squareNum, int input)
         {
             var value = GetSquareValue(squareNum);
             if (value > input)
             {
-                return squareNum;
+                return value;
             }
             else
             {

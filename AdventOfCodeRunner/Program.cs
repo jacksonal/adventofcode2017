@@ -28,7 +28,7 @@ namespace AdventOfCodeRunner
             Console.WriteLine($"\tpart2:{day2Part2.Solve(Resources.Day2Input)}");
             Console.WriteLine($"day 3 solutions:");
             Console.WriteLine($"\tpart1:{day3Part1.Solve(277678)}");
-            Console.WriteLine($"\tpart2:{day3Part2.Solve(800)}");
+            Console.WriteLine($"\tpart2:{day3Part2.Solve(277678)}");
             Console.WriteLine("Happy Holidays!");
             Console.ReadLine();
         }

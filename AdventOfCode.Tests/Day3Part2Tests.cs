@@ -15,10 +15,7 @@ namespace AdventOfCode.Tests
         }
 
         [TestCase(23, 806)]
-        [TestCase(10, 26)]
-        [TestCase(9, 25)]
-        [TestCase(8, 23)]
-        [TestCase(7, 11)]
+        [TestCase(22, 747)]
         [TestCase(6, 10)]
         [TestCase(5, 5)]
         [TestCase(4, 4)]
@@ -66,8 +63,8 @@ namespace AdventOfCode.Tests
             Assert.AreEqual(-1, loc.Y);
         }
 
-        [TestCase(150, 18)]
-        [TestCase(25, 10)]
+        [TestCase(150, 304)]
+        [TestCase(25, 26)]
         [TestCase(3, 4)]
         [TestCase(4, 5)]
         public void GetFirstLarger(int input, int expected)
