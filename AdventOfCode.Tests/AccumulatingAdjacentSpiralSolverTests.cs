@@ -4,7 +4,7 @@ using NUnit.Framework;
 namespace AdventOfCode.Tests
 {
     [TestFixture]
-    public class Day3Part2Tests
+    public class AccumulatingAdjacentSpiralSolverTests
     {
         private AccumulatingAdjacentSpiralSolver _systemUnderTest;
 

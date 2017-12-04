@@ -43,12 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Day1Part1Tests.cs" />
-    <Compile Include="Day1Part2Tests.cs" />
-    <Compile Include="Day2Part1Tests.cs" />
-    <Compile Include="Day2Part2Tests.cs" />
-    <Compile Include="Day3Part1Tests.cs" />
-    <Compile Include="Day3Part2Tests.cs" />
+    <Compile Include="ReverseCaptchaNextDuplicateTests.cs" />
+    <Compile Include="ReverseCaptchaHalfwayAroundDuplicateTests.cs" />
+    <Compile Include="BiggestDiffCheckSumSolverTests.cs" />
+    <Compile Include="EvenlyDivisibleCheckSumSolverTests.cs" />
+    <Compile Include="ManhattenDistanceSpiralSolverTests.cs" />
+    <Compile Include="AccumulatingAdjacentSpiralSolverTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UniquePassphraseValidatorTets.cs" />
   </ItemGroup>

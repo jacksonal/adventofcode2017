@@ -6,7 +6,7 @@ using NUnit.Framework;
 namespace AdventOfCode.Tests
 {
     [TestFixture]
-    public class Day2Part1Tests
+    public class BiggestDiffCheckSumSolverTests
     {
         private BiggestDiffCheckSumSolver _systemUnderTest;
 

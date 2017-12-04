@@ -4,7 +4,7 @@ using NUnit.Framework;
 namespace AdventOfCode.Tests
 {
     [TestFixture]
-    public class Day2Part2Tests
+    public class EvenlyDivisibleCheckSumSolverTests
     {
         private EvenlyDivisibleCheckSumSolver _systemUnderTest;
 

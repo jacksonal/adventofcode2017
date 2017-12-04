@@ -9,7 +9,7 @@ using NUnit.Framework;
 namespace AdventOfCode.Tests
 {
     [TestFixture]
-    public class Day1Part1Tests
+    public class ReverseCaptchaNextDuplicateTests
     {
         private ReverseCaptchaNextDuplicate _systemUnderTest;
 
