@@ -50,6 +50,7 @@
     <Compile Include="Day3Part1Tests.cs" />
     <Compile Include="Day3Part2Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UniquePassphraseValidatorTets.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
