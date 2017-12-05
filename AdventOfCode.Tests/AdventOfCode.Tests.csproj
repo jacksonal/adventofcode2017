@@ -46,6 +46,8 @@
     <Compile Include="Day4\AnagramWordTests.cs" />
     <Compile Include="Day4\PhraseTests.cs" />
     <Compile Include="Day4\UniqueAnagramPassphraseValidatorTests.cs" />
+    <Compile Include="Day5\JumpMazeSolverTests.cs" />
+    <Compile Include="Day5\StrangerJumpMazeSolverTests.cs" />
     <Compile Include="ReverseCaptchaNextDuplicateTests.cs" />
     <Compile Include="ReverseCaptchaHalfwayAroundDuplicateTests.cs" />
     <Compile Include="BiggestDiffCheckSumSolverTests.cs" />

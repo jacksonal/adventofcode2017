@@ -56,6 +56,9 @@
     <Compile Include="Day4\Phrase.cs" />
     <Compile Include="Day4\UniqueAnagramPassphraseValidator.cs" />
     <Compile Include="Day4\UniquePassphraseValidator.cs" />
+    <Compile Include="Day5\JumpMazeSolver.cs" />
+    <Compile Include="Day5\JumpMazeSolverBase.cs" />
+    <Compile Include="Day5\StrangerJumpMazeSolver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
