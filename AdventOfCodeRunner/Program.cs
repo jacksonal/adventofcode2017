@@ -21,6 +21,7 @@ namespace AdventOfCodeRunner
             var day3Part1 = new ManhattenDistanceSpiralSolver();
             var day3Part2 = new AccumulatingAdjacentSpiralSolver();
             var day4Part1 = new UniquePassphraseValidator();
+            var day4Part2 = new UniqueAnagramPassphraseValidator();
 
             Console.WriteLine($"day 1 solutions:");
             Console.WriteLine($"\tpart1:{day1Part1.Solve(Resources.Day1Input)}");
@@ -33,6 +34,7 @@ namespace AdventOfCodeRunner
             Console.WriteLine($"\tpart2:{day3Part2.Solve(277678)}");
             Console.WriteLine($"day 4 solutions:");
             Console.WriteLine($"\tpart1:{day4Part1.Solve(Resources.Day4Input)}");
+            Console.WriteLine($"\tpart2:{day4Part2.Solve(Resources.Day4Input)}");
             Console.WriteLine("Happy Holidays!");
             Console.ReadLine();
         }

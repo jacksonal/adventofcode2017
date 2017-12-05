@@ -51,6 +51,10 @@
     <Compile Include="Day3\GridLocation.cs" />
     <Compile Include="Day3\ManhattenDistanceSpiralSolver.cs" />
     <Compile Include="Day3\SpiralSolver.cs" />
+    <Compile Include="Day4\AnagramWord.cs" />
+    <Compile Include="Day4\PassphraseValidator.cs" />
+    <Compile Include="Day4\Phrase.cs" />
+    <Compile Include="Day4\UniqueAnagramPassphraseValidator.cs" />
     <Compile Include="Day4\UniquePassphraseValidator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 
 namespace AdventOfCode.Day4
 {
-    public class UniquePassphraseValidator
+    public class UniquePassphraseValidator : PassphraseValidator
     {
-        public bool IsValid(string phrase)
+        public override bool IsValid(string phrase)
         {
             var ret = true;
             var set = new HashSet<string>();
@@ -15,11 +14,6 @@ namespace AdventOfCode.Day4
                 ret &= set.Add(word);
             }
             return ret;
-        }
-
-        public int Solve(string input)
-        {
-            return input.Split(new[] {Environment.NewLine}, StringSplitOptions.RemoveEmptyEntries).Count(IsValid);
         }
     }
 }
