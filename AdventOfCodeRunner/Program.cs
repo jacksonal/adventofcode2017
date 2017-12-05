@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using AdventOfCode.Day1;
 using AdventOfCode.Day2;
 using AdventOfCode.Day3;

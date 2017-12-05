@@ -1,14 +1,19 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace AdventOfCode.Day3
 {
     public class AccumulatingAdjacentSpiralSolver: SpiralSolver
     {
-
+        private Dictionary<int,int> _spiral = new Dictionary<int, int>();
         public int GetSquareValue(int squareNum)
         {
             var ret = 0;
-            if (squareNum == 1)
+            if (_spiral.ContainsKey(squareNum))
+            {
+                ret = _spiral[squareNum];
+            }
+            else if (squareNum == 1)
             {
                 ret = 1;
             }
@@ -23,6 +28,7 @@ namespace AdventOfCode.Day3
                     }
                 }
             }
+            _spiral[squareNum] = ret;
             return ret;
         }
 
