@@ -48,6 +48,9 @@
     <Compile Include="Day4\UniqueAnagramPassphraseValidatorTests.cs" />
     <Compile Include="Day5\JumpMazeSolverTests.cs" />
     <Compile Include="Day5\StrangerJumpMazeSolverTests.cs" />
+    <Compile Include="Day6\MemoryAllocationTests.cs" />
+    <Compile Include="Day6\MemoryReallocationLoopSizeSolverTests.cs" />
+    <Compile Include="Day6\MemoryReallocationSolverTests.cs" />
     <Compile Include="ReverseCaptchaNextDuplicateTests.cs" />
     <Compile Include="ReverseCaptchaHalfwayAroundDuplicateTests.cs" />
     <Compile Include="BiggestDiffCheckSumSolverTests.cs" />

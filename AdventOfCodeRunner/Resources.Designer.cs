@@ -223,5 +223,14 @@ namespace AdventOfCodeRunner {
                 return ResourceManager.GetString("Day5Input", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 4	1	15	12	0	9	9	5	5	8	7	3	14	5	12	3.
+        /// </summary>
+        internal static string Day6Input {
+            get {
+                return ResourceManager.GetString("Day6Input", resourceCulture);
+            }
+        }
     }
 }

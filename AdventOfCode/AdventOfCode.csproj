@@ -59,6 +59,9 @@
     <Compile Include="Day5\JumpMazeSolver.cs" />
     <Compile Include="Day5\JumpMazeSolverBase.cs" />
     <Compile Include="Day5\StrangerJumpMazeSolver.cs" />
+    <Compile Include="Day6\MemoryAllocation.cs" />
+    <Compile Include="Day6\MemoryReallocationLoopSizeSolver.cs" />
+    <Compile Include="Day6\MemoryReallocationSolver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
