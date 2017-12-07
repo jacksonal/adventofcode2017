@@ -52,6 +52,7 @@
     <Compile Include="Day6\MemoryReallocationLoopSizeSolverTests.cs" />
     <Compile Include="Day6\MemoryReallocationSolverTests.cs" />
     <Compile Include="Day7\ProgramTeeRootSolverTests.cs" />
+    <Compile Include="Day7\ProgramTreeBalanceSolverTests.cs" />
     <Compile Include="Day7\ProgramTreeTests.cs" />
     <Compile Include="Resources.Designer.cs">
       <AutoGen>True</AutoGen>

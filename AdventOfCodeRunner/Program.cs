@@ -26,6 +26,7 @@ namespace AdventOfCodeRunner
             var day6Part1 = new MemoryReallocationSolver(Resources.Day6Input);
             var day6Part2 = new MemoryReallocationLoopSizeSolver(Resources.Day6Input);
             var day7Part1 = new ProgramTreeRootSolver();
+            var day7Part2 = new ProgramTreeBalanceSolver();
 
             Console.WriteLine($"day 1 solutions:");
             Console.WriteLine($"\tpart1:{day1Part1.Solve(Resources.Day1Input)}");
@@ -47,6 +48,7 @@ namespace AdventOfCodeRunner
             Console.WriteLine($"\tpart2:{day6Part2.Solve()}");
             Console.WriteLine($"day 7 solutions:");
             Console.WriteLine($"\tpart1:{day7Part1.Solve(Resources.Day7Input)}");
+            Console.WriteLine($"\tpart2:{day7Part2.Solve(Resources.Day7Input)}");
             Console.WriteLine("Happy Holidays!");
             Console.ReadLine();
         }

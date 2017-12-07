@@ -59,14 +59,4 @@ namespace AdventOfCode.Day7
             return ret;
         }
     }
-
-    class ProgramTreeBalanceSolver : ProgramTreeSolver
-    {
-        public override string Solve(string input)
-        {
-            BuildTree(input);
-
-            return "";
-        }
-    }
 }

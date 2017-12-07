@@ -62,6 +62,7 @@
     <Compile Include="Day6\MemoryAllocation.cs" />
     <Compile Include="Day6\MemoryReallocationLoopSizeSolver.cs" />
     <Compile Include="Day6\MemoryReallocationSolver.cs" />
+    <Compile Include="Day7\ProgramTreeBalanceSolver.cs" />
     <Compile Include="Day7\ProgramTreeNode.cs" />
     <Compile Include="Day7\ProgramTreeRootSolver.cs" />
     <Compile Include="Day7\ProgramTreeSolver.cs" />
