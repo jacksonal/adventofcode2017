@@ -232,5 +232,39 @@ namespace AdventOfCodeRunner {
                 return ResourceManager.GetString("Day6Input", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to uglvj (99) -&gt; ymfjt, gkpgf
+        ///vvwrg (51)
+        ///qrpgt (5)
+        ///qhqbqj (55)
+        ///taxdaf (23)
+        ///zbbdyc (81)
+        ///xhymdo (185) -&gt; errip, lsppdni, mxukll
+        ///qlrcubm (81)
+        ///ukgzz (7)
+        ///ubvvr (288) -&gt; hrpzu, msjeeks, ozizlok
+        ///zfotzg (45) -&gt; ovomgd, mqhwlq
+        ///khdgj (49)
+        ///idjugav (99)
+        ///heuuqx (77)
+        ///yierd (96) -&gt; ubnxkza, whlsvf, pnnpym, tznsg
+        ///yciccp (173) -&gt; ijpsv, fjtafl, lxwntcm, saacvs
+        ///jcekn (38)
+        ///boxtod (126) -&gt; sxtbzfe, etdah
+        ///iunue (25)
+        ///iceaj (216) -&gt; zbqgiy, taxdaf
+        ///vobnuq (64)
+        ///grkyj (7)
+        ///etgjaum (61)
+        ///erjcx (47)
+        ///sqcodst (19)
+        ///vi [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Day7Input {
+            get {
+                return ResourceManager.GetString("Day7Input", resourceCulture);
+            }
+        }
     }
 }
