@@ -53,6 +53,11 @@
     <Compile Include="Day6\MemoryReallocationSolverTests.cs" />
     <Compile Include="Day7\ProgramTeeRootSolverTests.cs" />
     <Compile Include="Day7\ProgramTreeTests.cs" />
+    <Compile Include="Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="ReverseCaptchaNextDuplicateTests.cs" />
     <Compile Include="ReverseCaptchaHalfwayAroundDuplicateTests.cs" />
     <Compile Include="BiggestDiffCheckSumSolverTests.cs" />
@@ -70,6 +75,15 @@
       <Project>{F28DB795-DF5E-4A98-8499-647A891AB7DC}</Project>
       <Name>AdventOfCode</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExampleProgramTree.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

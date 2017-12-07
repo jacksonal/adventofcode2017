@@ -5,6 +5,7 @@ using AdventOfCode.Day3;
 using AdventOfCode.Day4;
 using AdventOfCode.Day5;
 using AdventOfCode.Day6;
+using AdventOfCode.Day7;
 
 namespace AdventOfCodeRunner
 {
@@ -24,6 +25,7 @@ namespace AdventOfCodeRunner
             var day5Part2 = new StrangerJumpMazeSolver(Resources.Day5Input);
             var day6Part1 = new MemoryReallocationSolver(Resources.Day6Input);
             var day6Part2 = new MemoryReallocationLoopSizeSolver(Resources.Day6Input);
+            var day7Part1 = new ProgramTreeRootSolver();
 
             Console.WriteLine($"day 1 solutions:");
             Console.WriteLine($"\tpart1:{day1Part1.Solve(Resources.Day1Input)}");
@@ -43,6 +45,8 @@ namespace AdventOfCodeRunner
             Console.WriteLine($"day 6 solutions:");
             Console.WriteLine($"\tpart1:{day6Part1.Solve()}");
             Console.WriteLine($"\tpart2:{day6Part2.Solve()}");
+            Console.WriteLine($"day 7 solutions:");
+            Console.WriteLine($"\tpart1:{day7Part1.Solve(Resources.Day7Input)}");
             Console.WriteLine("Happy Holidays!");
             Console.ReadLine();
         }
