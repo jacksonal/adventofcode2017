@@ -80,5 +80,17 @@ namespace AdventOfCode.Tests {
                 return ResourceManager.GetString("ExampleProgramTree", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to b inc 5 if a &gt; 1
+        ///a inc 1 if b &lt; 5
+        ///c dec -10 if a &gt;= 1
+        ///c inc -20 if c == 10.
+        /// </summary>
+        internal static string ExampleRegisterInstructions {
+            get {
+                return ResourceManager.GetString("ExampleRegisterInstructions", resourceCulture);
+            }
+        }
     }
 }

@@ -56,6 +56,9 @@
     <Compile Include="Day7\ProgramTreeTests.cs" />
     <Compile Include="Day8\ComparatorTests.cs" />
     <Compile Include="Day8\OperatorTests.cs" />
+    <Compile Include="Day8\RegisterInstructionsSolverTests.cs" />
+    <Compile Include="Day8\StatementTests.cs" />
+    <Compile Include="Day8\ValueTableTests.cs" />
     <Compile Include="Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -87,6 +90,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ExampleProgramTree.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExampleRegisterInstructions.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

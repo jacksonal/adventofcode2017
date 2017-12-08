@@ -22,10 +22,21 @@
                 case "==":
                     ret = new EqualComparator();
                     break;
+                case "!=":
+                    ret = new NotEqualComparator();
+                    break;
             }
             return ret;
         }
 
         public abstract bool Compare(int left, int right);
+    }
+
+    public class NotEqualComparator : Comparator
+    {
+        public override bool Compare(int left, int right)
+        {
+            return left != right;
+        }
     }
 }

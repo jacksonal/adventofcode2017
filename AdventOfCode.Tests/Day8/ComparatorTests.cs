@@ -11,6 +11,7 @@ namespace AdventOfCode.Tests.Day8
         [TestCase("<", typeof(LessThanComparator))]
         [TestCase(">=", typeof(GreaterThanOrEqualComparator))]
         [TestCase("==", typeof(EqualComparator))]
+        [TestCase("!=", typeof(NotEqualComparator))]
         public void GetInstance_ValidComparatorString_ReturnsCorrectInstance(string symbol, Type expected)
         {
             Assert.IsInstanceOf(expected, Comparator.GetInstance(symbol));
