@@ -67,11 +67,14 @@
     <Compile Include="Day7\ProgramTreeRootSolver.cs" />
     <Compile Include="Day7\ProgramTreeSolver.cs" />
     <Compile Include="Day8\Comparator.cs" />
+    <Compile Include="Day8\Decrementor.cs" />
     <Compile Include="Day8\EqualComparator.cs" />
     <Compile Include="Day8\GreaterThanComparator.cs" />
     <Compile Include="Day8\GreaterThanOrEqualComparator.cs" />
+    <Compile Include="Day8\Incrementor.cs" />
     <Compile Include="Day8\LessThanComparator.cs" />
     <Compile Include="Day8\LessThanOrEqualComparator.cs" />
+    <Compile Include="Day8\Operator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

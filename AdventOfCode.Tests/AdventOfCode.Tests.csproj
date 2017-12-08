@@ -55,6 +55,7 @@
     <Compile Include="Day7\ProgramTreeBalanceSolverTests.cs" />
     <Compile Include="Day7\ProgramTreeTests.cs" />
     <Compile Include="Day8\ComparatorTests.cs" />
+    <Compile Include="Day8\OperatorTests.cs" />
     <Compile Include="Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
