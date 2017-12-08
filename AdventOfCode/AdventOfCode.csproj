@@ -75,6 +75,7 @@
     <Compile Include="Day8\LessThanComparator.cs" />
     <Compile Include="Day8\LessThanOrEqualComparator.cs" />
     <Compile Include="Day8\Operator.cs" />
+    <Compile Include="Day8\RegisterInstructionsMaxEverSolver.cs" />
     <Compile Include="Day8\RegisterInstructionsSolver.cs" />
     <Compile Include="Day8\Statement.cs" />
     <Compile Include="Day8\ValueTable.cs" />

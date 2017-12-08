@@ -29,6 +29,7 @@ namespace AdventOfCodeRunner
             var day7Part1 = new ProgramTreeRootSolver();
             var day7Part2 = new ProgramTreeBalanceSolver();
             var day8Part1 = new RegisterInstructionsSolver();
+            var day8Part2 = new RegisterInstructionsMaxEverSolver();
 
             Console.WriteLine($"day 1 solutions:");
             Console.WriteLine($"\tpart1:{day1Part1.Solve(Resources.Day1Input)}");
@@ -53,6 +54,7 @@ namespace AdventOfCodeRunner
             Console.WriteLine($"\tpart2:{day7Part2.Solve(Resources.Day7Input)}");
             Console.WriteLine($"day 8 solutions:");
             Console.WriteLine($"\tpart1:{day8Part1.Solve(Resources.Day8Input)}");
+            Console.WriteLine($"\tpart2:{day8Part2.Solve(Resources.Day8Input)}");
             Console.WriteLine("Happy Holidays!");
             Console.ReadLine();
         }

@@ -1,20 +1,21 @@
 ﻿using System;
 using System.IO;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Text.RegularExpressions;
 
 namespace AdventOfCode.Day8
 {
     public class RegisterInstructionsSolver
     {
-        private ValueTable _valueTable;
+        protected ValueTable _valueTable;
 
         public RegisterInstructionsSolver()
         {
             _valueTable = new ValueTable();
         }
 
-        public int Solve(string input)
+        public virtual int Solve(string input)
         {
             using (var sr = new StringReader(input))
             {
