@@ -1,6 +1,6 @@
 ﻿namespace AdventOfCode.Day8
 {
-    public class Comparator
+    public abstract class Comparator
     {
         public static Comparator GetInstance(string symbol)
         {
@@ -25,25 +25,7 @@
             }
             return ret;
         }
-    }
 
-    public class EqualComparator : Comparator
-    {
-    }
-
-    public class LessThanOrEqualComparator : Comparator
-    {
-    }
-
-    public class GreaterThanOrEqualComparator : Comparator
-    {
-    }
-
-    public class LessThanComparator : Comparator
-    {
-    }
-
-    public class GreaterThanComparator : Comparator
-    {
+        public abstract bool Compare(int left, int right);
     }
 }
