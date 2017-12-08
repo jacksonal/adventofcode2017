@@ -266,5 +266,35 @@ namespace AdventOfCodeRunner {
                 return ResourceManager.GetString("Day7Input", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to n dec 271 if az &lt; 3
+        ///f inc -978 if nm &lt;= 9
+        ///g inc -336 if ga &lt; 2
+        ///egk dec 437 if y &lt; 5
+        ///z dec -550 if g == -336
+        ///mx dec 12 if bqr == 0
+        ///mx dec 433 if ns == 0
+        ///ic inc 506 if g &lt;= -327
+        ///ga dec -560 if ic != 506
+        ///bqr dec 570 if az &gt;= -9
+        ///g dec 372 if egk != -429
+        ///f dec -863 if b &gt;= -9
+        ///gyc inc 844 if av &gt;= 7
+        ///cr inc -781 if mx &gt;= -453
+        ///ga dec 346 if cr == -781
+        ///b inc -162 if z &lt; 554
+        ///nno inc 504 if g &lt;= -700
+        ///mx dec -32 if vkg &lt;= 6
+        ///mx dec -961 if nno &lt; 509
+        ///az dec 320 if ic &lt; 510
+        ///nm dec 594 if ga != -354
+        ///cr [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Day8Input {
+            get {
+                return ResourceManager.GetString("Day8Input", resourceCulture);
+            }
+        }
     }
 }
