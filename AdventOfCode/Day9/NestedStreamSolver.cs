@@ -30,10 +30,6 @@ namespace AdventOfCode.Day9
                         ret.AddChild(BuildTree(s));
                     }
                 }
-                else if (c=='!')
-                {
-                    s.Read();
-                }
                 else if (c == '<')
                 {
                     ret.TrashCount += ParseTrash(s);
