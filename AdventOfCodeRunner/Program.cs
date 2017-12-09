@@ -7,6 +7,7 @@ using AdventOfCode.Day5;
 using AdventOfCode.Day6;
 using AdventOfCode.Day7;
 using AdventOfCode.Day8;
+using AdventOfCode.Day9;
 
 namespace AdventOfCodeRunner
 {
@@ -30,6 +31,8 @@ namespace AdventOfCodeRunner
             var day7Part2 = new ProgramTreeBalanceSolver();
             var day8Part1 = new RegisterInstructionsSolver();
             var day8Part2 = new RegisterInstructionsMaxEverSolver();
+            var day9Part1 = new NestedStreamSolver();
+            var day9Part2 = new NestedStreamTrashCountSolver();
 
             Console.WriteLine($"day 1 solutions:");
             Console.WriteLine($"\tpart1:{day1Part1.Solve(Resources.Day1Input)}");
@@ -55,6 +58,9 @@ namespace AdventOfCodeRunner
             Console.WriteLine($"day 8 solutions:");
             Console.WriteLine($"\tpart1:{day8Part1.Solve(Resources.Day8Input)}");
             Console.WriteLine($"\tpart2:{day8Part2.Solve(Resources.Day8Input)}");
+            Console.WriteLine($"day 9 solutions:");
+            Console.WriteLine($"\tpart1:{day9Part1.Solve(Resources.Day9Input)}");
+            Console.WriteLine($"\tpart2:{day9Part2.Solve(Resources.Day9Input)}");
             Console.WriteLine("Happy Holidays!");
             Console.ReadLine();
         }

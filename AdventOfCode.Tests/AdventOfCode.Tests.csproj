@@ -59,6 +59,7 @@
     <Compile Include="Day8\RegisterInstructionsSolverTests.cs" />
     <Compile Include="Day8\StatementTests.cs" />
     <Compile Include="Day8\ValueTableTests.cs" />
+    <Compile Include="Day9\NestedStreamSolverTests.cs" />
     <Compile Include="Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

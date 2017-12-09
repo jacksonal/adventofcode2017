@@ -79,6 +79,9 @@
     <Compile Include="Day8\RegisterInstructionsSolver.cs" />
     <Compile Include="Day8\Statement.cs" />
     <Compile Include="Day8\ValueTable.cs" />
+    <Compile Include="Day9\NestedStreamSolver.cs" />
+    <Compile Include="Day9\NestedStreamTrashCountSolver.cs" />
+    <Compile Include="Day9\TreeNode.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

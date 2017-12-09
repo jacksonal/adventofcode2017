@@ -19,7 +19,7 @@ namespace AdventOfCodeRunner {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -294,6 +294,15 @@ namespace AdventOfCodeRunner {
         internal static string Day8Input {
             get {
                 return ResourceManager.GetString("Day8Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {{{{{&lt;&gt;},{{&lt;u!&gt;},&lt;!!!!!!!&gt;&lt;!!u!!&quot;!&gt;!!!!!&gt;!&gt;},&lt;,!!o&gt;},{}},{&lt;!&gt;},&lt;{!!a!a!!!!,!{i!!!&gt;&gt;,{&lt;!!!!i!!!&gt;&gt;}}},{{{{{&lt;&lt;{!&gt;,&lt;!&gt;,&lt;o!&gt;},&lt;!!&lt;!,i!!&lt;,!&gt;,&lt;!&gt;}e&gt;}}},{{},&lt;!!}&apos;,!&gt;},&lt;!&gt;},&lt;e,!&gt;,&lt;!!!&gt;&lt;&gt;},{}},{{{{{&lt;}i&gt;,{{}}},{&lt;!&gt;},&lt;oe!&gt;},&lt;&lt;,!!a&apos;}{&quot;!!!!!&gt;&quot;&apos;u!&gt;,&lt;!!!&gt;&apos;&gt;,{{&lt;!!u!!!!!&gt;!&gt;!!!&gt;,}&apos;u,!{!&gt;,&lt;}!&gt;},&lt;}u&gt;}}}},{&lt;{!&quot;}!&gt;!!u!&gt;},&lt;!&gt;},&lt;eoi!!}o&quot;&quot;i!!u}e&gt;},{&lt;&quot;{&gt;,{{&lt;&gt;}}}},{{&lt;{!,&gt;},{&lt;e!&apos;&quot;!,u}&gt;,{&lt;&gt;}},{{},{{&lt;!&gt;,&lt;!&lt;e!&gt;i!!!&gt;o!!!&gt;&gt;}}}},{{},{{{},{&lt;!&gt;!&gt;u&lt;&quot;&apos;o&quot;&apos;!}!&gt;,&lt;!&gt;,&lt;&quot;ea&lt;i{!!a&gt;,{&lt;a!!!!!&gt;!&gt;,&lt;a!!!&gt;&quot;ei!!&lt;iu!!!!,&gt;}}},{&lt;a!oe!!!&gt;eauu&apos;&gt;}}},{{{&lt;!u!&gt;ou!&gt;,&lt;e [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Day9Input {
+            get {
+                return ResourceManager.GetString("Day9Input", resourceCulture);
             }
         }
     }
