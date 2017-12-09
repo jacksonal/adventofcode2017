@@ -1,7 +1,7 @@
 ﻿using AdventOfCode.Day1;
 using NUnit.Framework;
 
-namespace AdventOfCode.Tests
+namespace AdventOfCode.Tests.Day1
 {
     [TestFixture]
     public class ReverseCaptchaHalfwayAroundDuplicateTests

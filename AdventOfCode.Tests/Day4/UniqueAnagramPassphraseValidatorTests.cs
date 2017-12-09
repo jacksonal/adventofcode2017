@@ -2,7 +2,7 @@
 using AdventOfCode.Day4;
 using NUnit.Framework;
 
-namespace AdventOfCode.Tests
+namespace AdventOfCode.Tests.Day4
 {
     [TestFixture]
     public class UniqueAnagramPassphraseValidatorTests

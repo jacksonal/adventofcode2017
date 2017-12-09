@@ -1,7 +1,7 @@
 ﻿using AdventOfCode.Day3;
 using NUnit.Framework;
 
-namespace AdventOfCode.Tests
+namespace AdventOfCode.Tests.Day3
 {
     [TestFixture]
     public class AccumulatingAdjacentSpiralSolverTests

@@ -1,7 +1,7 @@
 ﻿using AdventOfCode.Day2;
 using NUnit.Framework;
 
-namespace AdventOfCode.Tests
+namespace AdventOfCode.Tests.Day2
 {
     [TestFixture]
     public class EvenlyDivisibleCheckSumSolverTests
