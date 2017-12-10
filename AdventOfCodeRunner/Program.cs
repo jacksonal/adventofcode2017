@@ -1,5 +1,6 @@
 ﻿using System;
 using AdventOfCode.Day1;
+using AdventOfCode.Day10;
 using AdventOfCode.Day2;
 using AdventOfCode.Day3;
 using AdventOfCode.Day4;
@@ -33,34 +34,49 @@ namespace AdventOfCodeRunner
             var day8Part2 = new RegisterInstructionsMaxEverSolver();
             var day9Part1 = new NestedStreamSolver();
             var day9Part2 = new NestedStreamTrashCountSolver();
+            var day10Part1 = new KnotHashSolver();
+            var day10Part2 = new DenseKnotHashSolver();
 
             Console.WriteLine($"day 1 solutions:");
             Console.WriteLine($"\tpart1:{day1Part1.Solve(Resources.Day1Input)}");
             Console.WriteLine($"\tpart2:{day1Part2.Solve(Resources.Day1Input)}");
+
             Console.WriteLine($"day 2 solutions:");
             Console.WriteLine($"\tpart1:{day2Part1.Solve(Resources.Day2Input)}");
             Console.WriteLine($"\tpart2:{day2Part2.Solve(Resources.Day2Input)}");
+
             Console.WriteLine($"day 3 solutions:");
             Console.WriteLine($"\tpart1:{day3Part1.Solve(277678)}");
             Console.WriteLine($"\tpart2:{day3Part2.Solve(277678)}");
+
             Console.WriteLine($"day 4 solutions:");
             Console.WriteLine($"\tpart1:{day4Part1.Solve(Resources.Day4Input)}");
             Console.WriteLine($"\tpart2:{day4Part2.Solve(Resources.Day4Input)}");
+
             Console.WriteLine($"day 5 solutions:");
             Console.WriteLine($"\tpart1:{day5Part1.Solve()}");
             Console.WriteLine($"\tpart2:{day5Part2.Solve()}");
+
             Console.WriteLine($"day 6 solutions:");
             Console.WriteLine($"\tpart1:{day6Part1.Solve()}");
             Console.WriteLine($"\tpart2:{day6Part2.Solve()}");
+
             Console.WriteLine($"day 7 solutions:");
             Console.WriteLine($"\tpart1:{day7Part1.Solve(Resources.Day7Input)}");
             Console.WriteLine($"\tpart2:{day7Part2.Solve(Resources.Day7Input)}");
+
             Console.WriteLine($"day 8 solutions:");
             Console.WriteLine($"\tpart1:{day8Part1.Solve(Resources.Day8Input)}");
             Console.WriteLine($"\tpart2:{day8Part2.Solve(Resources.Day8Input)}");
+
             Console.WriteLine($"day 9 solutions:");
             Console.WriteLine($"\tpart1:{day9Part1.Solve(Resources.Day9Input)}");
             Console.WriteLine($"\tpart2:{day9Part2.Solve(Resources.Day9Input)}");
+
+            Console.WriteLine($"day 10 solutions:");
+            Console.WriteLine($"\tpart1:{day10Part1.Solve(Resources.Day10Input)}");
+            Console.WriteLine($"\tpart2:{day10Part2.GetDenseHash(Resources.Day10Input)}");
+
             Console.WriteLine("Happy Holidays!");
             Console.ReadLine();
         }
