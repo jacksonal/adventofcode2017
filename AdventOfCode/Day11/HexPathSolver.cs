@@ -1,4 +1,6 @@
-﻿namespace AdventOfCode.Day11
+﻿using System;
+
+namespace AdventOfCode.Day11
 {
     public class HexPathSolver
     {
@@ -6,7 +8,7 @@
         public int CurrentY { get; set; }
         public int CurrentZ { get; set; }
 
-        public void Step(string direction)
+        public virtual void Step(string direction)
         {
             switch (direction)
             {
@@ -35,6 +37,25 @@
                     CurrentZ++;
                     break;
             }
+        }
+
+        public virtual int Solve(string input)
+        {
+            TravelThePath(input);
+            return GetDistanceFromOrigin();
+        }
+
+        protected void TravelThePath(string input)
+        {
+            foreach (var dir in input.Split(new[] {','}, StringSplitOptions.RemoveEmptyEntries))
+            {
+                Step(dir);
+            }
+        }
+
+        protected int GetDistanceFromOrigin()
+        {
+            return (Math.Abs(CurrentX) + Math.Abs(CurrentY) + Math.Abs(CurrentZ)) / 2;
         }
     }
 }

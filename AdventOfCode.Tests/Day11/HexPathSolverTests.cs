@@ -7,6 +7,12 @@ namespace AdventOfCode.Tests.Day11
     {
         private HexPathSolver _systemUnderTest;
 
+        [SetUp]
+        public void BeforeEach()
+        {
+            _systemUnderTest = new HexPathSolver();
+        }
+
         [TestCase("n", 0, 1, -1)]
         [TestCase("s", 0, -1, 1)]
         [TestCase("ne", 1, 0, -1)]
@@ -20,6 +26,15 @@ namespace AdventOfCode.Tests.Day11
             Assert.AreEqual(x, _systemUnderTest.CurrentX);
             Assert.AreEqual(y, _systemUnderTest.CurrentY);
             Assert.AreEqual(z, _systemUnderTest.CurrentZ);
+        }
+
+        [TestCase("ne,ne,ne", 3)]
+        [TestCase("ne,ne,sw,sw", 0)]
+        [TestCase("ne,ne,s,s", 2)]
+        [TestCase("se,sw,se,sw,sw", 3)]
+        public void Solve_GetDistanceFromOriginTestCases(string input, int expected)
+        {
+            Assert.AreEqual(expected, _systemUnderTest.Solve(input));
         }
     }
 }
