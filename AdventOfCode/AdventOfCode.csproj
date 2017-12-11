@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="Day10\DenseKnotHashSolver.cs" />
     <Compile Include="Day10\KnotHashSolver.cs" />
+    <Compile Include="Day11\HexPathSolver.cs" />
     <Compile Include="Day1\ReverseCaptcha.cs" />
     <Compile Include="Day1\ReverseCaptchaHalfwayAroundDuplicate.cs" />
     <Compile Include="Day1\ReverseCaptchaNextDuplicate.cs" />

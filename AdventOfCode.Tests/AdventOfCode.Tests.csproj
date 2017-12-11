@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Day10\DenseKnotHashSolverTests.cs" />
     <Compile Include="Day10\KnotHashSolverTests.cs" />
+    <Compile Include="Day11\HexPathSolverTests.cs" />
     <Compile Include="Day4\AnagramWordTests.cs" />
     <Compile Include="Day4\PhraseTests.cs" />
     <Compile Include="Day4\UniqueAnagramPassphraseValidatorTests.cs" />
@@ -97,5 +98,6 @@
   <ItemGroup>
     <None Include="Resources\ExampleRegisterInstructions.txt" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

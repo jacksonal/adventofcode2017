@@ -19,7 +19,7 @@ namespace AdventOfCodeRunner {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -66,6 +66,15 @@ namespace AdventOfCodeRunner {
         internal static string Day10Input {
             get {
                 return ResourceManager.GetString("Day10Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to n,ne,ne,se,se,se,se,s,se,se,sw,s,s,s,s,s,sw,sw,s,sw,sw,sw,sw,s,sw,sw,sw,nw,nw,n,nw,n,sw,sw,nw,nw,nw,nw,nw,n,s,nw,nw,nw,n,se,nw,n,s,ne,se,n,n,nw,ne,n,nw,nw,n,nw,sw,n,n,n,n,n,s,n,n,n,ne,ne,ne,ne,se,n,ne,n,n,n,n,ne,ne,sw,n,n,ne,ne,ne,ne,ne,ne,sw,ne,se,ne,ne,ne,ne,se,ne,ne,sw,ne,s,n,n,s,se,ne,se,n,se,ne,se,se,ne,ne,ne,ne,ne,ne,ne,se,ne,ne,se,se,se,ne,se,s,nw,se,ne,se,n,se,se,s,se,se,se,sw,n,se,se,se,se,se,se,n,se,s,se,sw,se,nw,se,se,se,se,se,se,se,sw,sw,s,nw,s,se,nw,se,se,s,s,se,se,s,se,nw,nw,se,s,se,se,s,s,s,s [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Day11Input {
+            get {
+                return ResourceManager.GetString("Day11Input", resourceCulture);
             }
         }
         
