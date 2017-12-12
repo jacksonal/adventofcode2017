@@ -2,6 +2,7 @@
 using AdventOfCode.Day1;
 using AdventOfCode.Day10;
 using AdventOfCode.Day11;
+using AdventOfCode.Day12;
 using AdventOfCode.Day2;
 using AdventOfCode.Day3;
 using AdventOfCode.Day4;
@@ -39,6 +40,7 @@ namespace AdventOfCodeRunner
             var day10Part2 = new DenseKnotHashSolver();
             var day11Part1 = new HexPathSolver();
             var day11Part2 = new MaxDistanceHexPathSolver();
+            var day12Part1 = new ProgramGraphBuilder().BuildGraph(Resources.Day12Input);
 
             Console.WriteLine($"day 1 solutions:");
             Console.WriteLine($"\tpart1:{day1Part1.Solve(Resources.Day1Input)}");
@@ -80,9 +82,13 @@ namespace AdventOfCodeRunner
             Console.WriteLine($"\tpart1:{day10Part1.Solve(Resources.Day10Input)}");
             Console.WriteLine($"\tpart2:{day10Part2.GetDenseHash(Resources.Day10Input)}");
 
-            Console.WriteLine($"day 10 solutions:");
+            Console.WriteLine($"day 11 solutions:");
             Console.WriteLine($"\tpart1:{day11Part1.Solve(Resources.Day11Input)}");
             Console.WriteLine($"\tpart2:{day11Part2.Solve(Resources.Day11Input)}");
+
+            Console.WriteLine($"day 12 solutions:");
+            Console.WriteLine($"\tpart1:{day12Part1.CountNodes(0)}");
+            Console.WriteLine($"\tpart2:{day12Part1.CountGroups()}");
 
             Console.WriteLine("Happy Holidays!");
             Console.ReadLine();

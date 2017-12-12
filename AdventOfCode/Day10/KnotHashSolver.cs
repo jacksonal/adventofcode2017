@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.Serialization.Formatters;
 
 namespace AdventOfCode.Day10
 {
@@ -29,9 +27,9 @@ namespace AdventOfCode.Day10
         {
             var subArray = Twist(GetSubArray(length));
             var repositionIndex = CurrentPosition;
-            for (int i = 0; i < subArray.Length; i++)
+            foreach (var value in subArray)
             {
-                ProblemSet[repositionIndex] = subArray[i];
+                ProblemSet[repositionIndex] = value;
                 repositionIndex = (repositionIndex + 1) % ProblemSet.Length;
             }
 
@@ -53,9 +51,9 @@ namespace AdventOfCode.Day10
 
         public int Solve(string input)
         {
-            foreach (var value in input.Split(new []{','},StringSplitOptions.RemoveEmptyEntries).Select(s=>Convert.ToInt32(s)))
+            foreach (var length in input.Split(new []{','},StringSplitOptions.RemoveEmptyEntries).Select(s=>Convert.ToInt32(s)))
             {
-                TwistLength(value);
+                TwistLength(length);
             }
             return ProblemSet[0] * ProblemSet[1];
         }

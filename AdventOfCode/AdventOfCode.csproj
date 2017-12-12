@@ -44,6 +44,9 @@
     <Compile Include="Day10\KnotHashSolver.cs" />
     <Compile Include="Day11\HexPathSolver.cs" />
     <Compile Include="Day11\MaxDistanceHexPathSolver.cs" />
+    <Compile Include="Day12\ProgramGraph.cs" />
+    <Compile Include="Day12\ProgramGraphBuilder.cs" />
+    <Compile Include="Day12\ProgramGraphNode.cs" />
     <Compile Include="Day1\ReverseCaptcha.cs" />
     <Compile Include="Day1\ReverseCaptchaHalfwayAroundDuplicate.cs" />
     <Compile Include="Day1\ReverseCaptchaNextDuplicate.cs" />

@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 
 namespace AdventOfCode.Day10
@@ -33,7 +32,7 @@ namespace AdventOfCode.Day10
                 var set = ProblemSet.Skip(i * 16).Take(16).ToArray();
                 if (set.Any())
                 {
-                    ret[i] = set.Skip(1).Aggregate(set.First(), ((i1, i2) => i1 ^ i2));
+                    ret[i] = set.Aggregate(0, ((i1, i2) => i1 ^ i2));
                 }
             }
             return ret;
