@@ -47,6 +47,8 @@
     <Compile Include="Day12\ProgramGraph.cs" />
     <Compile Include="Day12\ProgramGraphBuilder.cs" />
     <Compile Include="Day12\ProgramGraphNode.cs" />
+    <Compile Include="Day13\FireWallLayer.cs" />
+    <Compile Include="Day13\SecurityScanner.cs" />
     <Compile Include="Day1\ReverseCaptcha.cs" />
     <Compile Include="Day1\ReverseCaptchaHalfwayAroundDuplicate.cs" />
     <Compile Include="Day1\ReverseCaptchaNextDuplicate.cs" />

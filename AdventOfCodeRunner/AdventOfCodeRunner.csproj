@@ -98,5 +98,8 @@
   <ItemGroup>
     <None Include="Resources\Day12Input.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Day13Input.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

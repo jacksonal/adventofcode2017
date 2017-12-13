@@ -107,5 +107,17 @@ namespace AdventOfCode.Tests {
                 return ResourceManager.GetString("ExampleRegisterInstructions", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 0: 3
+        ///1: 2
+        ///4: 4
+        ///6: 4.
+        /// </summary>
+        internal static string ExampleSecurityScanner {
+            get {
+                return ResourceManager.GetString("ExampleSecurityScanner", resourceCulture);
+            }
+        }
     }
 }

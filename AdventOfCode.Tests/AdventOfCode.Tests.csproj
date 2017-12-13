@@ -47,6 +47,9 @@
     <Compile Include="Day10\KnotHashSolverTests.cs" />
     <Compile Include="Day11\HexPathSolverTests.cs" />
     <Compile Include="Day12\ProgramGraphTests.cs" />
+    <Compile Include="Day13\SecurityScannerTests.cs" />
+    <Compile Include="Day13\SecurityScannerTraveller.cs" />
+    <Compile Include="Day13\SecurityScannerTraversalTests.cs" />
     <Compile Include="Day4\AnagramWordTests.cs" />
     <Compile Include="Day4\PhraseTests.cs" />
     <Compile Include="Day4\UniqueAnagramPassphraseValidatorTests.cs" />
@@ -103,5 +106,8 @@
     <None Include="Resources\ExampleCommunicationGraph.txt" />
   </ItemGroup>
   <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\ExampleSecurityScanner.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
