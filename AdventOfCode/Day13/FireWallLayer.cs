@@ -49,5 +49,17 @@
             _scanDirection = ScanDirection.Up;
             ScannerPosition = 0;
         }
+
+        public bool ScannerAtZero(int step)
+        {
+            if (ScanRange.HasValue)
+            {
+                return step % ((ScanRange.Value - 1) * 2) == 0;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }

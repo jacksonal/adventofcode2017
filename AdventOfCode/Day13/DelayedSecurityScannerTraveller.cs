@@ -1,4 +1,6 @@
-﻿namespace AdventOfCode.Day13
+﻿using System.Linq;
+
+namespace AdventOfCode.Day13
 {
     public class DelayedSecurityScannerTraveller : SecurityScannerTraveller
     {
@@ -10,17 +12,9 @@
         public int GetDelayForSafePassage()
         {
             var delay = 0;
-            MoveToEnd();
-            while (IsCaught)
+            while (_scanner.Layers.Aggregate(false, (result, layer) => result || layer.ScannerAtZero(delay + _scanner.Layers.IndexOf(layer))))
             {
-                _scanner.Reset();
-                Reset();
                 delay++;
-                for (var i = 0; i < delay; i++)
-                {
-                    _scanner.Step();
-                }
-                MoveToEnd();
             }
             return delay;
         }
