@@ -47,6 +47,7 @@
     <Compile Include="Day12\ProgramGraph.cs" />
     <Compile Include="Day12\ProgramGraphBuilder.cs" />
     <Compile Include="Day12\ProgramGraphNode.cs" />
+    <Compile Include="Day13\DelayedSecurityScannerTraveller.cs" />
     <Compile Include="Day13\FireWallLayer.cs" />
     <Compile Include="Day13\SecurityScanner.cs" />
     <Compile Include="Day13\SecurityScannerTraveller.cs" />

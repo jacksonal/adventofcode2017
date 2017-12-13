@@ -43,5 +43,11 @@
                 }
             }
         }
+
+        public void Reset()
+        {
+            _scanDirection = ScanDirection.Up;
+            ScannerPosition = 0;
+        }
     }
 }

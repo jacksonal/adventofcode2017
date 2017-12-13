@@ -5,15 +5,17 @@ namespace AdventOfCode.Day13
 {
     public class SecurityScannerTraveller
     {
-        private SecurityScanner _scanner;
+        protected SecurityScanner _scanner;
 
         public SecurityScannerTraveller(SecurityScanner scanner)
         {
             CurrentPosition = -1;
             _scanner = scanner;
+            IsCaught = false;
         }
 
         public int CurrentPosition { get; set; }
+        public bool IsCaught { get; set; }
 
         public int Advance()
         {
@@ -24,6 +26,7 @@ namespace AdventOfCode.Day13
                 var layer = _scanner.Layers[CurrentPosition];
                 if (layer.ScannerPosition == 0 && layer.ScanRange != null)
                 {
+                    IsCaught = true;
                     ret = (int) layer.ScanRange * CurrentPosition;
                 }
                 _scanner.Step();
@@ -31,7 +34,7 @@ namespace AdventOfCode.Day13
             return ret;
         }
 
-        public bool IsFinished()
+        public virtual bool IsFinished()
         {
             return CurrentPosition >= _scanner.Layers.Count;
         }
@@ -44,6 +47,12 @@ namespace AdventOfCode.Day13
                 ret += Advance();
             }
             return ret;
+        }
+
+        public void Reset()
+        {
+            IsCaught = false;
+            CurrentPosition = -1;
         }
     }
 }

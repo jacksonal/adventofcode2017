@@ -52,6 +52,14 @@ namespace AdventOfCode.Day13
                 layer.AdvanceScanner();
             }
         }
+
+        public void Reset()
+        {
+            foreach (var layer in Layers)
+            {
+                layer.Reset();
+            }
+        }
     }
 
     public enum ScanDirection

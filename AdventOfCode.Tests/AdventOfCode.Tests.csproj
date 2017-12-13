@@ -47,6 +47,7 @@
     <Compile Include="Day10\KnotHashSolverTests.cs" />
     <Compile Include="Day11\HexPathSolverTests.cs" />
     <Compile Include="Day12\ProgramGraphTests.cs" />
+    <Compile Include="Day13\DelayedSecurityScannerTraversalTests.cs" />
     <Compile Include="Day13\SecurityScannerTests.cs" />
     <Compile Include="Day13\SecurityScannerTraversalTests.cs" />
     <Compile Include="Day4\AnagramWordTests.cs" />

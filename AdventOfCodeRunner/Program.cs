@@ -46,6 +46,7 @@ namespace AdventOfCodeRunner
             //day13
             var securityModel = SecurityScanner.CreateModel(Resources.Day13Input);
             var day13Part1 = new SecurityScannerTraveller(securityModel);
+            var day13Part2 = new DelayedSecurityScannerTraveller(securityModel);
 
             Console.WriteLine($"day 1 solutions:");
             Console.WriteLine($"\tpart1:{day1Part1.Solve(Resources.Day1Input)}");
@@ -97,6 +98,7 @@ namespace AdventOfCodeRunner
 
             Console.WriteLine($"day 13 solutions:");
             Console.WriteLine($"\tpart1:{day13Part1.MoveToEnd()}");
+            Console.WriteLine($"\tpart2:{day13Part2.GetDelayForSafePassage()}");
 
             Console.WriteLine("Happy Holidays!");
             Console.ReadLine();
