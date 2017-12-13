@@ -1,7 +1,7 @@
 ﻿using System;
 using AdventOfCode.Day13;
 
-namespace AdventOfCode.Tests.Day13
+namespace AdventOfCode.Day13
 {
     public class SecurityScannerTraveller
     {

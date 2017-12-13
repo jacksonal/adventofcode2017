@@ -3,6 +3,7 @@ using AdventOfCode.Day1;
 using AdventOfCode.Day10;
 using AdventOfCode.Day11;
 using AdventOfCode.Day12;
+using AdventOfCode.Day13;
 using AdventOfCode.Day2;
 using AdventOfCode.Day3;
 using AdventOfCode.Day4;
@@ -41,6 +42,10 @@ namespace AdventOfCodeRunner
             var day11Part1 = new HexPathSolver();
             var day11Part2 = new MaxDistanceHexPathSolver();
             var day12Part1 = new ProgramGraphBuilder().BuildGraph(Resources.Day12Input);
+            
+            //day13
+            var securityModel = SecurityScanner.CreateModel(Resources.Day13Input);
+            var day13Part1 = new SecurityScannerTraveller(securityModel);
 
             Console.WriteLine($"day 1 solutions:");
             Console.WriteLine($"\tpart1:{day1Part1.Solve(Resources.Day1Input)}");
@@ -89,6 +94,9 @@ namespace AdventOfCodeRunner
             Console.WriteLine($"day 12 solutions:");
             Console.WriteLine($"\tpart1:{day12Part1.CountNodes(0)}");
             Console.WriteLine($"\tpart2:{day12Part1.CountGroups()}");
+
+            Console.WriteLine($"day 13 solutions:");
+            Console.WriteLine($"\tpart1:{day13Part1.MoveToEnd()}");
 
             Console.WriteLine("Happy Holidays!");
             Console.ReadLine();
