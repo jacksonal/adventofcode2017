@@ -4,6 +4,7 @@ using NUnit.Framework;
 
 namespace AdventOfCode.Tests.Day14
 {
+    [TestFixture]
     public class KnotHashDiskAnalyzerTests
     {
         private KnotHashDiskAnalyzer _systemUnderTest;

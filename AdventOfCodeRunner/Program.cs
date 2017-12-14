@@ -51,61 +51,63 @@ namespace AdventOfCodeRunner
 
             //day 14
             var day14Part1 = new KnotHashDiskAnalyzer();
+            var day14Part2 = new KnotHashDiskRegionAnalyzer();
 
-//            Console.WriteLine($"day 1 solutions:");
-//            Console.WriteLine($"\tpart1:{day1Part1.Solve(Resources.Day1Input)}");
-//            Console.WriteLine($"\tpart2:{day1Part2.Solve(Resources.Day1Input)}");
-//
-//            Console.WriteLine($"day 2 solutions:");
-//            Console.WriteLine($"\tpart1:{day2Part1.Solve(Resources.Day2Input)}");
-//            Console.WriteLine($"\tpart2:{day2Part2.Solve(Resources.Day2Input)}");
-//
-//            Console.WriteLine($"day 3 solutions:");
-//            Console.WriteLine($"\tpart1:{day3Part1.Solve(277678)}");
-//            Console.WriteLine($"\tpart2:{day3Part2.Solve(277678)}");
-//
-//            Console.WriteLine($"day 4 solutions:");
-//            Console.WriteLine($"\tpart1:{day4Part1.Solve(Resources.Day4Input)}");
-//            Console.WriteLine($"\tpart2:{day4Part2.Solve(Resources.Day4Input)}");
-//
-//            Console.WriteLine($"day 5 solutions:");
-//            Console.WriteLine($"\tpart1:{day5Part1.Solve()}");
-//            Console.WriteLine($"\tpart2:{day5Part2.Solve()}");
-//
-//            Console.WriteLine($"day 6 solutions:");
-//            Console.WriteLine($"\tpart1:{day6Part1.Solve()}");
-//            Console.WriteLine($"\tpart2:{day6Part2.Solve()}");
-//
-//            Console.WriteLine($"day 7 solutions:");
-//            Console.WriteLine($"\tpart1:{day7Part1.Solve(Resources.Day7Input)}");
-//            Console.WriteLine($"\tpart2:{day7Part2.Solve(Resources.Day7Input)}");
-//
-//            Console.WriteLine($"day 8 solutions:");
-//            Console.WriteLine($"\tpart1:{day8Part1.Solve(Resources.Day8Input)}");
-//            Console.WriteLine($"\tpart2:{day8Part2.Solve(Resources.Day8Input)}");
-//
-//            Console.WriteLine($"day 9 solutions:");
-//            Console.WriteLine($"\tpart1:{day9Part1.Solve(Resources.Day9Input)}");
-//            Console.WriteLine($"\tpart2:{day9Part2.Solve(Resources.Day9Input)}");
-//
-//            Console.WriteLine($"day 10 solutions:");
-//            Console.WriteLine($"\tpart1:{day10Part1.Solve(Resources.Day10Input)}");
-//            Console.WriteLine($"\tpart2:{day10Part2.GetDenseHash(Resources.Day10Input)}");
-//
-//            Console.WriteLine($"day 11 solutions:");
-//            Console.WriteLine($"\tpart1:{day11Part1.Solve(Resources.Day11Input)}");
-//            Console.WriteLine($"\tpart2:{day11Part2.Solve(Resources.Day11Input)}");
-//
-//            Console.WriteLine($"day 12 solutions:");
-//            Console.WriteLine($"\tpart1:{day12Part1.CountNodes(0)}");
-//            Console.WriteLine($"\tpart2:{day12Part1.CountGroups()}");
-//
-//            Console.WriteLine($"day 13 solutions:");
-//            Console.WriteLine($"\tpart1:{day13Part1.MoveToEnd()}");
-//            Console.WriteLine($"\tpart2:{day13Part2.GetDelayForSafePassage()}");
+            Console.WriteLine($"day 1 solutions:");
+            Console.WriteLine($"\tpart1:{day1Part1.Solve(Resources.Day1Input)}");
+            Console.WriteLine($"\tpart2:{day1Part2.Solve(Resources.Day1Input)}");
+            
+            Console.WriteLine($"day 2 solutions:");
+            Console.WriteLine($"\tpart1:{day2Part1.Solve(Resources.Day2Input)}");
+            Console.WriteLine($"\tpart2:{day2Part2.Solve(Resources.Day2Input)}");
+            
+            Console.WriteLine($"day 3 solutions:");
+            Console.WriteLine($"\tpart1:{day3Part1.Solve(277678)}");
+            Console.WriteLine($"\tpart2:{day3Part2.Solve(277678)}");
+            
+            Console.WriteLine($"day 4 solutions:");
+            Console.WriteLine($"\tpart1:{day4Part1.Solve(Resources.Day4Input)}");
+            Console.WriteLine($"\tpart2:{day4Part2.Solve(Resources.Day4Input)}");
+            
+            Console.WriteLine($"day 5 solutions:");
+            Console.WriteLine($"\tpart1:{day5Part1.Solve()}");
+            Console.WriteLine($"\tpart2:{day5Part2.Solve()}");
+            
+            Console.WriteLine($"day 6 solutions:");
+            Console.WriteLine($"\tpart1:{day6Part1.Solve()}");
+            Console.WriteLine($"\tpart2:{day6Part2.Solve()}");
+            
+            Console.WriteLine($"day 7 solutions:");
+            Console.WriteLine($"\tpart1:{day7Part1.Solve(Resources.Day7Input)}");
+            Console.WriteLine($"\tpart2:{day7Part2.Solve(Resources.Day7Input)}");
+            
+            Console.WriteLine($"day 8 solutions:");
+            Console.WriteLine($"\tpart1:{day8Part1.Solve(Resources.Day8Input)}");
+            Console.WriteLine($"\tpart2:{day8Part2.Solve(Resources.Day8Input)}");
+            
+            Console.WriteLine($"day 9 solutions:");
+            Console.WriteLine($"\tpart1:{day9Part1.Solve(Resources.Day9Input)}");
+            Console.WriteLine($"\tpart2:{day9Part2.Solve(Resources.Day9Input)}");
+            
+            Console.WriteLine($"day 10 solutions:");
+            Console.WriteLine($"\tpart1:{day10Part1.Solve(Resources.Day10Input)}");
+            Console.WriteLine($"\tpart2:{day10Part2.GetDenseHash(Resources.Day10Input)}");
+            
+            Console.WriteLine($"day 11 solutions:");
+            Console.WriteLine($"\tpart1:{day11Part1.Solve(Resources.Day11Input)}");
+            Console.WriteLine($"\tpart2:{day11Part2.Solve(Resources.Day11Input)}");
+            
+            Console.WriteLine($"day 12 solutions:");
+            Console.WriteLine($"\tpart1:{day12Part1.CountNodes(0)}");
+            Console.WriteLine($"\tpart2:{day12Part1.CountGroups()}");
+            
+            Console.WriteLine($"day 13 solutions:");
+            Console.WriteLine($"\tpart1:{day13Part1.MoveToEnd()}");
+            Console.WriteLine($"\tpart2:{day13Part2.GetDelayForSafePassage()}");
 
             Console.WriteLine($"day 14 solutions:");
             Console.WriteLine($"\tpart1:{day14Part1.Solve(Resources.Day14Input)}");
+            Console.WriteLine($"\tpart2:{day14Part2.Solve(Resources.Day14Input)}");
 
             Console.WriteLine("Happy Holidays!");
             Console.ReadLine();

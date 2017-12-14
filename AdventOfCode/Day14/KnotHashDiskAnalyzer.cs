@@ -6,14 +6,14 @@ namespace AdventOfCode.Day14
 {
     public class KnotHashDiskAnalyzer
     {
-        private DenseKnotHashSolver _hashSolver;
+        protected DenseKnotHashSolver _hashSolver;
 
         public KnotHashDiskAnalyzer()
         {
             _hashSolver = new DenseKnotHashSolver();
         }
 
-        public int Solve(string input)
+        public virtual int Solve(string input)
         {
             var count = 0;
             for (int i = 0; i < 128; i++)
