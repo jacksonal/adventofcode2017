@@ -51,6 +51,7 @@
     <Compile Include="Day13\FireWallLayer.cs" />
     <Compile Include="Day13\SecurityScanner.cs" />
     <Compile Include="Day13\SecurityScannerTraveller.cs" />
+    <Compile Include="Day14\KnotHashDiskAnalyzer.cs" />
     <Compile Include="Day1\ReverseCaptcha.cs" />
     <Compile Include="Day1\ReverseCaptchaHalfwayAroundDuplicate.cs" />
     <Compile Include="Day1\ReverseCaptchaNextDuplicate.cs" />

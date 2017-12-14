@@ -11,11 +11,7 @@ namespace AdventOfCode.Day10
 
         public KnotHashSolver()
         {
-            ProblemSet = new int[256];
-            for (int i = 0; i < ProblemSet.Length; i++)
-            {
-                ProblemSet[i] = i;
-            }
+            Reset();
         }
 
         public int[] Twist(int[] ints)
@@ -56,6 +52,17 @@ namespace AdventOfCode.Day10
                 TwistLength(length);
             }
             return ProblemSet[0] * ProblemSet[1];
+        }
+
+        public void Reset()
+        {
+            CurrentPosition = 0;
+            SkipSize = 0;
+            ProblemSet = new int[256];
+            for (int i = 0; i < ProblemSet.Length; i++)
+            {
+                ProblemSet[i] = i;
+            }
         }
     }
 }
