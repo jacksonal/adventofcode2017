@@ -53,6 +53,9 @@
     <Compile Include="Day13\SecurityScannerTraveller.cs" />
     <Compile Include="Day14\KnotHashDiskAnalyzer.cs" />
     <Compile Include="Day14\KnotHashDiskRegionAnalyzer.cs" />
+    <Compile Include="Day15\NumberEngine.cs" />
+    <Compile Include="Day15\NumberGenerator.cs" />
+    <Compile Include="Day15\NumberJudge.cs" />
     <Compile Include="Day1\ReverseCaptcha.cs" />
     <Compile Include="Day1\ReverseCaptchaHalfwayAroundDuplicate.cs" />
     <Compile Include="Day1\ReverseCaptchaNextDuplicate.cs" />

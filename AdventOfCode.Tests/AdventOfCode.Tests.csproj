@@ -53,6 +53,8 @@
     <Compile Include="Day13\SecurityScannerTraversalTests.cs" />
     <Compile Include="Day14\KnotHashDiskAnalyzerTests.cs" />
     <Compile Include="Day14\KnotHashDiskRegionAnalyzerTests.cs" />
+    <Compile Include="Day15\NumberGeneratorTests.cs" />
+    <Compile Include="Day15\NumberJudgeTests.cs" />
     <Compile Include="Day4\AnagramWordTests.cs" />
     <Compile Include="Day4\PhraseTests.cs" />
     <Compile Include="Day4\UniqueAnagramPassphraseValidatorTests.cs" />
