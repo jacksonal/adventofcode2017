@@ -4,6 +4,7 @@ using NUnit.Framework;
 
 namespace AdventOfCode.Tests.Day16
 {
+    [TestFixture]
     public class DanceMoveTests
     {
         [TestCase("s1", typeof(SpinMove))]

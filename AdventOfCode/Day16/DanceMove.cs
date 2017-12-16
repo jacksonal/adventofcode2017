@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace AdventOfCode.Day16
 {
@@ -11,30 +12,20 @@ namespace AdventOfCode.Day16
             switch (type)
             {
                 case 'x':
-                    ret = new ExchangeMove();
+                    ret = new ExchangeMove(move.Substring(1));
                     break;
                 case 's':
-                    ret = new SpinMove();
+                    ret = new SpinMove(move.Substring(1));
                     break;
                 case 'p':
-                    ret = new PartnerMove();
+                    ret = new PartnerMove(move.Substring(1));
                     break;
                 default:
                     throw new ArgumentException();
             }
             return ret;
         }
-    }
 
-    public class PartnerMove : DanceMove
-    {
-    }
-
-    public class ExchangeMove : DanceMove
-    {
-    }
-
-    public class SpinMove : DanceMove
-    {
+        public abstract IList<char> Dance(IList<char> positions);
     }
 }

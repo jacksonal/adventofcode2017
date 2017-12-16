@@ -58,6 +58,9 @@
     <Compile Include="Day15\NumberGenerator.cs" />
     <Compile Include="Day15\NumberJudge.cs" />
     <Compile Include="Day16\DanceMove.cs" />
+    <Compile Include="Day16\ExchangeMove.cs" />
+    <Compile Include="Day16\PartnerMove.cs" />
+    <Compile Include="Day16\SpinMove.cs" />
     <Compile Include="Day1\ReverseCaptcha.cs" />
     <Compile Include="Day1\ReverseCaptchaHalfwayAroundDuplicate.cs" />
     <Compile Include="Day1\ReverseCaptchaNextDuplicate.cs" />
