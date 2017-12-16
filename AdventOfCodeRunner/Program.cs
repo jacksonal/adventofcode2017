@@ -120,7 +120,7 @@ namespace AdventOfCodeRunner
             clock.Stop();
             Console.WriteLine($"{clock.ElapsedMilliseconds}ms");
             clock = Stopwatch.StartNew();
-            Console.WriteLine($"\tpart2:{day15Part2.GetCountOfValidNumbersGeneratedAsync(5000000)}");
+            Console.WriteLine($"\tpart2:{day15Part2.GetCountOfValidNumbersGenerated(5000000)}");
             clock.Stop();
             Console.WriteLine($"{clock.ElapsedMilliseconds}ms");
 
