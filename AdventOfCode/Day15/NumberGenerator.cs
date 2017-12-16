@@ -16,16 +16,18 @@ namespace AdventOfCode.Day15
             _multipleFilter = multipleFilter;
         }
 
-        public Task<long> Next()
+        public Task<long> NextAsync()
         {
-            return Task.Factory.StartNew(() =>
+            return Task.Factory.StartNew(Next);
+        }
+
+        public long Next()
+        {
+            do
             {
-                do
-                {
-                    _previousValue = (_previousValue * _factor) % _divider;
-                } while (_previousValue % _multipleFilter != 0);
-                return _previousValue;
-            });
+                _previousValue = (_previousValue * _factor) % _divider;
+            } while (_previousValue % _multipleFilter != 0);
+            return _previousValue;
         }
     }
 }

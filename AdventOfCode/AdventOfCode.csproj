@@ -54,6 +54,7 @@
     <Compile Include="Day14\KnotHashDiskAnalyzer.cs" />
     <Compile Include="Day14\KnotHashDiskRegionAnalyzer.cs" />
     <Compile Include="Day15\NumberEngine.cs" />
+    <Compile Include="Day15\NumberEngineAsync.cs" />
     <Compile Include="Day15\NumberGenerator.cs" />
     <Compile Include="Day15\NumberJudge.cs" />
     <Compile Include="Day1\ReverseCaptcha.cs" />

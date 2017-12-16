@@ -15,11 +15,9 @@ namespace AdventOfCode.Tests.Day15
             var numberGen = new NumberGenerator(16807, 65);
             for (int i = 0; i < quantity - 1; i++)
             {
-                numberGen.Next().Wait();
+                numberGen.Next();
             }
-            var task = numberGen.Next();
-            task.Wait();
-            Assert.AreEqual(expected,task.Result);
+            Assert.AreEqual(expected, numberGen.Next());
         }
 
         [TestCase(1, 430625591)]
@@ -32,11 +30,9 @@ namespace AdventOfCode.Tests.Day15
             var numberGen = new NumberGenerator(48271, 8921);
             for (int i = 0; i < quantity - 1; i++)
             {
-                numberGen.Next().Wait();
+                numberGen.Next();
             }
-            var task = numberGen.Next();
-            task.Wait();
-            Assert.AreEqual(expected, task.Result);
+            Assert.AreEqual(expected, numberGen.Next());
         }
     }
 }

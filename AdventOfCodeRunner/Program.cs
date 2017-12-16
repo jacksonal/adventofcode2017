@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using AdventOfCode.Day1;
 using AdventOfCode.Day10;
 using AdventOfCode.Day11;
@@ -55,7 +56,7 @@ namespace AdventOfCodeRunner
             var day14Part2 = new KnotHashDiskRegionAnalyzer();
 
             var day15Part1 = new NumberEngine(618, 814);
-            var day15Part2 = new NumberEngine(618, 814, 4,8);
+            var day15Part2 = new NumberEngineAsync(618, 814, 4,8);
 
             //            Console.WriteLine($"day 1 solutions:");
             //            Console.WriteLine($"\tpart1:{day1Part1.Solve(Resources.Day1Input)}");
@@ -114,8 +115,14 @@ namespace AdventOfCodeRunner
             //            Console.WriteLine($"\tpart2:{day14Part2.Solve(Resources.Day14Input)}");
 
             Console.WriteLine($"day 15 solutions:");
-            //Console.WriteLine($"\tpart1:{day15Part1.GetCountOfValidNumbersGenerated(40000000)}");
-            Console.WriteLine($"\tpart1:{day15Part2.GetCountOfValidNumbersGenerated(5000000)}");
+            var clock = Stopwatch.StartNew();
+            Console.WriteLine($"\tpart1:{day15Part1.GetCountOfValidNumbersGenerated(40000000)}");
+            clock.Stop();
+            Console.WriteLine($"{clock.ElapsedMilliseconds}ms");
+            clock = Stopwatch.StartNew();
+            Console.WriteLine($"\tpart2:{day15Part2.GetCountOfValidNumbersGeneratedAsync(5000000)}");
+            clock.Stop();
+            Console.WriteLine($"{clock.ElapsedMilliseconds}ms");
 
             Console.WriteLine("Happy Holidays!");
             Console.ReadLine();

@@ -1,13 +1,10 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
-
-namespace AdventOfCode.Day15
+﻿namespace AdventOfCode.Day15
 {
     public class NumberEngine
     {
-        private NumberJudge _judge;
-        private NumberGenerator _generatorA;
-        private NumberGenerator _generatorB;
+        protected NumberJudge _judge;
+        protected NumberGenerator _generatorA;
+        protected NumberGenerator _generatorB;
 
         public NumberEngine(long aStart, long bStart)
         {
@@ -27,9 +24,7 @@ namespace AdventOfCode.Day15
         {
             for (var i = 0; i < pairsToCheck; i++)
             {
-                Task<long>[] tasks = new Task<long>[] {_generatorA.Next(), _generatorB.Next()};
-                Task.WaitAll(tasks);
-                _judge.Compare(tasks[0].Result,tasks[1].Result);
+                _judge.Compare(_generatorA.Next(), _generatorB.Next());
             }
             return _judge.ValidCount;
         }
