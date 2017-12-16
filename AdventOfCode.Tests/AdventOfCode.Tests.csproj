@@ -56,6 +56,7 @@
     <Compile Include="Day15\NumberEngineTests.cs" />
     <Compile Include="Day15\NumberGeneratorTests.cs" />
     <Compile Include="Day15\NumberJudgeTests.cs" />
+    <Compile Include="Day16\DanceMoveTests.cs" />
     <Compile Include="Day4\AnagramWordTests.cs" />
     <Compile Include="Day4\PhraseTests.cs" />
     <Compile Include="Day4\UniqueAnagramPassphraseValidatorTests.cs" />
