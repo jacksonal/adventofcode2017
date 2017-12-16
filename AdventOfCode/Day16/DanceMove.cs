@@ -26,6 +26,6 @@ namespace AdventOfCode.Day16
             return ret;
         }
 
-        public abstract IList<char> Dance(IList<char> positions);
+        public abstract List<char> Dance(IList<char> positions);
     }
 }

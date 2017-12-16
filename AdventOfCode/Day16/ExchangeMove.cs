@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace AdventOfCode.Day16
 {
@@ -15,13 +16,13 @@ namespace AdventOfCode.Day16
             SwapPosB = Convert.ToInt32(parts[1]);
         }
 
-        public override IList<char> Dance(IList<char> positions)
+        public override List<char> Dance(IList<char> positions)
         {
             var partner1 = positions[SwapPosA];
             var partner2 = positions[SwapPosB];
             positions[SwapPosA] = partner2;
             positions[SwapPosB] = partner1;
-            return positions;
+            return positions.ToList();
         }
     }
 }

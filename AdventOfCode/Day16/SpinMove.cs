@@ -12,7 +12,7 @@ namespace AdventOfCode.Day16
             SpinCount = Convert.ToInt32(spinCount);
         }
 
-        public override IList<char> Dance(IList<char> positions)
+        public override List<char> Dance(IList<char> positions)
         {
             var ret = new List<char>(positions);
             for (int i = 0; i < positions.Count; i++)

@@ -14,6 +14,14 @@ namespace AdventOfCode.Tests.Day16
             var result = line.Solve("s1,x3/4,pe/b");
             Assert.AreEqual("baedc", result);
         }
+
+        [Test]
+        public void DanceXTimes_ExampleCase()
+        {
+            var line = new TestDanceLine();
+            var result = line.DanceXTimes("s1,x3/4,pe/b",20);
+            Assert.AreEqual("abcde", result);
+        }
     }
 
     public class TestDanceLine : DanceLine
