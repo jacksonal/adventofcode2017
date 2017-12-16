@@ -57,6 +57,7 @@
     <Compile Include="Day15\NumberEngineAsync.cs" />
     <Compile Include="Day15\NumberGenerator.cs" />
     <Compile Include="Day15\NumberJudge.cs" />
+    <Compile Include="Day16\DanceLine.cs" />
     <Compile Include="Day16\DanceMove.cs" />
     <Compile Include="Day16\ExchangeMove.cs" />
     <Compile Include="Day16\PartnerMove.cs" />

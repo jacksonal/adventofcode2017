@@ -17,8 +17,10 @@ namespace AdventOfCode.Day16
 
         public override IList<char> Dance(IList<char> positions)
         {
-            positions[positions.IndexOf(Partner1)] = Partner2;
-            positions[positions.IndexOf(Partner2)] = Partner1;
+            var p1Index = positions.IndexOf(Partner1);
+            var p2Index = positions.IndexOf(Partner2);
+            positions[p1Index] = Partner2;
+            positions[p2Index] = Partner1;
             return positions;
         }
     }

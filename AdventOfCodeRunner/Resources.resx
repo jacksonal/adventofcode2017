@@ -133,6 +133,9 @@
   <data name="Day14Input" xml:space="preserve">
     <value>xlqgujun</value>
   </data>
+  <data name="Day16Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Day16Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
   <data name="Day1Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Day1Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
