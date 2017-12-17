@@ -61,6 +61,7 @@
     <Compile Include="Day16\EchangeMoveTests.cs" />
     <Compile Include="Day16\PartnerMoveTests.cs" />
     <Compile Include="Day16\SpinMoveTests.cs" />
+    <Compile Include="Day17\SpinlockTests.cs" />
     <Compile Include="Day4\AnagramWordTests.cs" />
     <Compile Include="Day4\PhraseTests.cs" />
     <Compile Include="Day4\UniqueAnagramPassphraseValidatorTests.cs" />

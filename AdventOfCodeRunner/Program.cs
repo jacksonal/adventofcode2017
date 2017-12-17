@@ -8,6 +8,7 @@ using AdventOfCode.Day13;
 using AdventOfCode.Day14;
 using AdventOfCode.Day15;
 using AdventOfCode.Day16;
+using AdventOfCode.Day17;
 using AdventOfCode.Day2;
 using AdventOfCode.Day3;
 using AdventOfCode.Day4;
@@ -61,6 +62,9 @@ namespace AdventOfCodeRunner
 
             var day16Part1 = new DanceLine();
             var day16Part2 = new DanceLine();
+
+            var day17Part1 = new Spinlock(355);
+            var day17Part2 = new Spinlock(355);
 
             //            Console.WriteLine($"day 1 solutions:");
             //            Console.WriteLine($"\tpart1:{day1Part1.Solve(Resources.Day1Input)}");
@@ -122,10 +126,14 @@ namespace AdventOfCodeRunner
             //            Console.WriteLine($"\tpart1:{day15Part1.GetCountOfValidNumbersGenerated(40000000)}");
             //            Console.WriteLine($"\tpart2:{day15Part2.GetCountOfValidNumbersGenerated(5000000)}");
 
-            Console.WriteLine($"day 16 solutions:");
-            Console.WriteLine($"\tpart1:{day16Part1.Solve(Resources.Day16Input)}");
-            Console.WriteLine($"\tpart2:{day16Part2.DanceABillionTimes(Resources.Day16Input)}");
+            //            Console.WriteLine($"day 16 solutions:");
+            //            Console.WriteLine($"\tpart1:{day16Part1.Solve(Resources.Day16Input)}");
+            //            Console.WriteLine($"\tpart2:{day16Part2.DanceABillionTimes(Resources.Day16Input)}");
 
+            day17Part1.BuildValues(2017);
+            Console.WriteLine($"day 17 solutions:");
+            Console.WriteLine($"\tpart1:{day17Part1.GetValue(day17Part1.CurrentPosition + 1)}");
+            Console.WriteLine($"\tpart2:{day17Part2.GetValueAfterInsertions(1,50000000)}");
             Console.WriteLine("Happy Holidays!");
             Console.ReadLine();
         }
